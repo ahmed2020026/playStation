@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file/css/normalize.css">
+    <link rel="stylesheet" href="file/css/index.css">
+    <link rel="stylesheet" href="file/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <a href="#" class="logo"><img src="file/css/image/logo.png" alt=""></a>
+            <ul class = "links">
+                <li class = "active">
+                    <a href="#landing" class = "item-links">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class = "item-links">About</a>
+                </li>
+                <li>
+                    <a href="#gallery" class = "item-links">Gallery</a>
+                </li>
+                <li>
+                    <a href="#games" class = "item-links">Games</a>
+                </li>
+                <li>
+                    <a href="#price" class = "item-links">Price</a>
+                </li>
+                <li>
+                    <a href="#contact" class = "item-links">Contact</a>
+                </li>
+            </ul>
+            <ul class="other-btn">
+                <li class="btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li class = "btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+            </ul>
+            <div class="form-search">
+                <div class="form-input">
+                    <input onkeyup="processing(this.value)" type="text" class = "search" name="search" required autocomplete="off">
+                </div>
+                <ul class="output">
+                </ul>
+            </div>
+        </div>
+    </header>
+    <article>
+        <section class = "landing" id = "landing">
+            <div class="content">
+                <h1>Hello, World</h1>
+                <h3>play enywhere, win everywhere</h3>
+                <p>stack wins, raise banners, and make history in NBA 2K25.<br> Coming soon to PS</p>
+            </div>
+        </section>
+        <section class="about" id = "about">
+            <div class="header-title">
+                <h2>About</h2>
+            </div>
+            <div class="container">
+                <img src="file/css/image/ps.webp" alt="">
+                <div class="text-content">
+                    <p>This feature builds on the 3D audio enhancements we’ve introduced to PS5 since launch, including 3D audio support for
+                    built-in TV speakers and support for compatible Dolby Atmos-enabled audio devices. These features give you additional
+                    options to immerse yourself more deeply in the rich variety of soundscapes in PS5 games, powered by Tempest 3D AudioTech</p>
+                </div>
+            </div>
+        </section>
+        <div class="component-seperator"></div>
+        <section class = "gallery" id = "gallery">
+            <div class="header-title">
+                <h2>Gallery</h2>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <img src="file/css/image/ps_1.jpeg" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/ps_3.jfif" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/ps.webp" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/ps_4.webp" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/ps_6.jfif" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/PS5.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/gall_8.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/gall_1.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/gall_2.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/gall_3.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/gall_5.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="file/css/image/gall_7.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="component-seperator"></div>
+        <section class = "games" id = "games">
+            <div class="header-title">
+                <h2>Games</h2>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="file/css/image/call of duty.jpg" alt="">
+                    <div class="text">
+                        <p get-data = "Cull of Duty">Cull of Duty</p>
+                        <a href="file/other_file/cull_of_duty.html">Open</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file/css/image/pubg.jpg" alt="">
+                    <div class="text">
+                        <p get-data = "Pubg Mobile">Pubg Mobile</p>
+                        <a href="file/other_file/pubge.html">Open</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file/css/image/pes 2013.jpg" alt="">
+                    <div class="text">
+                        <p get-data = "PES 2013">PES 2013</p>
+                        <a href="file/other_file/pes13.html">Open</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file/css/image/pes 2016.jpg" alt="">
+                    <div class="text">
+                        <p get-data = "PES 2016">PES 2016</p>
+                        <a href="file/other_file/pes16.html">Open</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file/css/image/e 2020.jpg" alt="">
+                    <div class="text">
+                        <p get-data = "eFootball 2020">eFootball 2020</p>
+                        <a href="file/other_file/pes18.html">Open</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file/css/image/fifa 16.jpg" alt="">
+                    <div class="text">
+                        <p get-data = "FIFA 16">FIFA 16</p>
+                        <a href="file/other_file/fifa16.html">Open</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file/css/image/fifa 18.jpg" alt="">
+                    <div class="text">
+                        <p get-data = "FIFA 18">FIFA 18</p>
+                        <a href="file/other_file/pes18.html">Open</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file/css/image/free fire.jpg" alt="">
+                    <div class="text">
+                        <p get-data = "Free fire">Free fire</p>
+                        <a href="file/other_file/free_fire.html">Open</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file/css/image/spider.jpg" alt="">
+                    <div class="text">
+                        <p get-data = "Spider Man">Spider Man</p>
+                        <a href="file/other_file/spider.html">Open</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="component-seperator"></div>
+        <section class="price" id = "price">
+            <div class="header-title">
+                <h2>Pricing</h2>
+            </div>
+            <div class="container">
+                <div class="contain-box">
+                    <div class="header">
+                        <h1>PS_3</h1>
+                        <img src="file/css/image/ps_3.jfif" alt="">
+                    </div>
+                    <div class="footer">
+                        <div class="range">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>300$</h3>
+                        <a href="#">Buy</a>
+                    </div>
+                </div>
+                <div class="contain-box">
+                    <div class="header">
+                        <h1>PS_4</h1>
+                        <img src="file/css/image/play6.jpg" alt="" >
+                    </div>
+                    <div class="footer">
+                        <div class="range">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>600$</h3>
+                        <a href="#">Buy</a>
+                    </div>
+                </div>
+                <div class="contain-box">
+                    <div class="header">
+                        <h1>PS_5</h1>
+                        <img src="file/css/image/play5.jpg" alt="">
+                    </div>
+                    <div class="footer">
+                        <div class="range">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3>900$</h3>
+                        <a href="#">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            <div class="container">
+                <video muted autoplay loop>
+                    <source src="file/css/videos/ps.mp4" type="video/mp4">
+                    <source src="file/css/videos/ps.ogg" type="video/ogg">
+                </video>
+            </div>
+        </section>
+        <section class = "contact" id = "contact">
+            <div class="header-title">
+                <h2>Contact US</h2>
+            </div>
+            <div class="container">
+                <div class="form">
+                    <div class="form-input">
+                        <input type="text" name="user" required autocomplete="off" placeholder="User name">
+                        <span></span>
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="number" required autocomplete="off" placeholder="Phone number">
+                        <span></span>
+                    </div>
+                    <div class="form-input" style="grid-column: span 2;">
+                        <input type="text" name="main" required autocomplete="off" placeholder="Email">
+                        <span></span>
+                    </div>
+                    <div class="form-input" style="grid-column: span 2; height: 150px;">
+                        <textarea name="message" id="message" placeholder="message....."></textarea>
+                    </div>
+                    <div class="form-input" style="grid-column: span 2; background-color: transparent;">
+                        <button>submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <img src="file/css/image/logo.png" alt="" width="100">
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>© 2024 <span>playStation</span>All Right Reserved</p>
+    </footer>
+    <!-- ======================== java-script files ======================== -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src = "file/css/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo"><img src="../css/image/logo.png" alt=""></a>
+            <ul class="links">
+                <li>
+                    <a href="../../index.html#landing">Home</a>
+                </li>
+                <li>
+                    <a href="../../index.html#about">About</a>
+                </li>
+                <li>
+                    <a href="../../index.html#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="../../index.html#games">Games</a>
+                </li>
+                <li>
+                    <a href="../../index.html#price">Price</a>
+                </li>
+                <li>
+                    <a href="../../index.html#contact">Contact</a>
+                </li>
+                <li class="active">
+                    <a href="cull_of_duty.html">Other</a>
+                </li>
+            </ul>
+            <ul class="other-btn">
+                <li class="btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <article>
+        <section class="text-content-slide">
+            <div class="container">
+                <div class="screen">
+                    <div class="slide-of-img">
+                        <!-- <img src="img/spider_2.jpg" alt="" class = "slide-img"> -->
+                    </div>
+                </div>
+            </div>
+            <button class="btn-click">Open Video</button>
+        </section>
+        <div class="component-seperator"></div>
+    </article>
+    <footer>
+        <img src="../css/image/logo.png" alt="" width="100">
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>© 2024 LeonAll Right Reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="../css/index.js" type="module"></script>
+    <!-- ===================================================================== -->
+    <!-- ============================ java Script file ======================= -->
+    <!-- ===================================================================== -->
+    <script type="module">
+        let slide = document.querySelector(".slide-img");
+        let slide_of_img = document.querySelector(".slide-of-img");
+        let slide_text = document.querySelector(".slide-text p");
+        /* ====================== Sousces =========================== */
+
+        let fifa18 = ["img/fifa18_1.jfif", "img/fifa18_2.jfif", "img/fifa18_3.jfif"];
+
+
+
+        let imgs = fifa18;
+        let i = 0;
+        function slideChange() {
+            let img = document.createElement("img");
+            img.className = "slide-img";
+            img.src = imgs[0];
+            slide_of_img.appendChild(img);
+            let slide_change = setInterval(() => {
+                i++;
+                i === imgs.length ? i = 0 : i;
+                img.src = imgs[i];
+            }, 2000);
+        }
+        slideChange();
+        let btn_open = document.querySelector(".btn-click");
+        /* --------------- create vedio ----------------- */
+
+            function display_video(selection) {
+                let div_tag = document.createElement("div");
+                div_tag.className = "video_tag";
+                let iframe = document.createElement("iframe");
+                iframe.setAttribute("allow", "autoplay");
+                iframe.src = selection;
+                div_tag.appendChild(iframe);
+                slide_of_img.appendChild(div_tag);
+                btn_open.innerHTML = "Close video"
+            }
+        /* ---------------------------------------------- */
+        btn_open.addEventListener('click', function () {
+            this.classList.toggle("open-video");
+            if (this.getAttribute("class") === "btn-click open-video") {
+                slide_of_img.textContent = '';
+                display_video("https://drive.google.com/file/d/1Yo0ukD1sRY5xMth0hEEXXyBxQKndGD0B/preview");
+            }
+            else {
+                slide_of_img.textContent = '';
+                slideChange();
+                btn_open.innerHTML = "Open video";
+            }
+        });
+        window.onscroll = function () { }
+    </script>
+</body>
+
+</html>
